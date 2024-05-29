@@ -14,14 +14,8 @@ public class LoseScene : MonoBehaviour
 
     void UnlockTrophy()
     {
-        Trophies.TryUnlock(234426, (trophyResult) =>
-        {
-            StartCoroutine(ReturnToMenu());
-        });
-        Trophies.TryUnlock(234423, (trophyResult) =>
-        {
-            StartCoroutine(ReturnToMenu());
-        });
+        Trophies.TryUnlock(234426);
+        Trophies.TryUnlock(234423);
     }
 
     IEnumerator ReturnToMenu()

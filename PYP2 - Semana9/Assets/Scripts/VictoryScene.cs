@@ -17,12 +17,7 @@ public class VictoryScene : MonoBehaviour
         Trophies.TryUnlock(234424, (trophyResult) =>
         {
             GameJoltUI.Instance.ShowTrophies();           
-        });
-
-        Trophies.TryUnlock(234427, (trophyResult) =>
-        {
-            GameJoltUI.Instance.ShowTrophies();            
-        });
+        });        
     }
 
     IEnumerator ReturnToMenu()
